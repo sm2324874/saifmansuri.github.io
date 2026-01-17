@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+  <h2>Loading...</h2>
+</div>
+
+
+<header>
+  <h1>Saif Mansuri</h1>
+  <p>Web Developer</p>
+  <button onclick="toggleMode()">Dark Mode</button>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <img src="images/saif.jpeg" class="profile">
+  <p>
+    Name: Saif Mansuri <br>
+    Course: BCA <br>
+    College: B P College of Computer Studies, Gandhinagar <br>
+    Skills: HTML, CSS, JavaScript <br>
+    Goal: Full Stack Web Developer
+  </p>
+</section>
+
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill">HTML</div>
+  <div class="skill">CSS</div>
+  <div class="skill">JavaScript</div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Advanced Bio Data Website</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
